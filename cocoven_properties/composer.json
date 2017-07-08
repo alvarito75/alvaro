@@ -1,0 +1,14 @@
+{
+  "name": "drupal/cocoven_properties",
+  "type": "drupal-module",
+  "description": "This contains services for all type of assets at Cocoven",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/cocoven_properties",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/cocoven_properties",
+    "source": "http://cgit.drupalcode.org/cocoven_properties"
+  },
+  "require": { }
+}

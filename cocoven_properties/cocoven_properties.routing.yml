@@ -1,0 +1,27 @@
+
+cocoven_properties.cocoven_properties_controller_hello:
+  path: '/v1/cocoven_property/create'
+  defaults:
+    _controller: '\Drupal\cocoven_properties\Controller\CocovenPropertiesController::createProperty'
+    _title: 'Create property'
+  methods: [POST]
+  requirements:
+    _permission: 'access content'
+
+cocoven_properties.cocoven_properties_controller_property_detail:
+  path: '/v1/cocoven_property/property/detail'
+  defaults:
+    _controller: '\Drupal\cocoven_properties\Controller\CocovenPropertiesController::propertyDetail'
+    _title: 'Property detail'
+  methods: [POST]
+  requirements:
+    _permission: 'access content'
+
+cocoven_properties.cocoven_properties_controller_unpublish_property:
+  path: '/v1/cocoven_property/property/unpublish'
+  defaults:
+    _controller: '\Drupal\cocoven_properties\Controller\CocovenPropertiesController::unpublishProperty'
+    _title: 'Unpublish property'
+  methods: [POST]
+  requirements:
+    _permission: 'access content'

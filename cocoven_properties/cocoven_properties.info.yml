@@ -1,0 +1,5 @@
+name: cocoven_properties
+type: module
+description: This contains services for all type of assets at Cocoven
+core: 8.x
+package: Cocoven

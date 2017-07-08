@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains cocoven_properties.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function cocoven_properties_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the cocoven_properties module.
+    case 'help.page.cocoven_properties':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This contains services for all type of assets at Cocoven') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function cocoven_properties_theme() {
+  return [
+    'cocoven_properties' => [
+      'template' => 'cocoven_properties',
+      'render element' => 'children',
+    ],
+  ];
+}
